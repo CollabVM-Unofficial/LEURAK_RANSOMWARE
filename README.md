@@ -1,5 +1,5 @@
 # LEURAK_RANSOMWARE
-Batch ransomware for use only on CollabVM
+Batch ransomware for use only on [CollabVM](http://computernewb.com/collab-vm/)
 
 ## I'M NOT LIABLE IF YOU DO SOMETHING RETARDED WITH THIS.
 ```
